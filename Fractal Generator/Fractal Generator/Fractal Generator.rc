@@ -1,0 +1,660 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\FractalGenerator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Fractal Generator.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_FRACTAL             BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_FRACTAL TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_SAVEAS
+    SEPARATOR
+    BUTTON      ID_FRACTAL_BEGIN
+    BUTTON      ID_VIEW_FRACTALPARAMETERS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "New"
+        BEGIN
+            POPUP "Complex"
+            BEGIN
+                MENUITEM "Mandelbrot",                  ID_NEW_MANDELBROT
+                MENUITEM "Julia",                       ID_NEW_JULIA
+                MENUITEM "Newton",                      ID_NEW_NEWTON
+                MENUITEM "Quaternion",                  ID_NEW_QUATERNION
+                MENUITEM "Real-Time Shader",            ID_NEW_LSYSTEM_1
+            END
+            POPUP "MRCM"
+            BEGIN
+                MENUITEM "Sierpinsky Gasket",           ID_NEW_GASKET
+                MENUITEM "Twin Christmas Tree",         ID_NEW_TWINXMASTREE
+                MENUITEM "5 pt. Snowflake",             ID_NEW_5PTSNOWFLAKE
+                MENUITEM "Fern",                        ID_NEW_FERN
+                MENUITEM "Koch Curve",                  ID_NEW_KOCHCURVE
+                MENUITEM SEPARATOR
+                MENUITEM "Custom...\tCtrl+N",           ID_FILE_NEW
+            END
+            POPUP "L-System"
+            BEGIN
+                MENUITEM "1",                           ID_NEW_LSYSTEM_1
+                MENUITEM "2",                           ID_NEW_LSYSTEM_2
+                MENUITEM "3",                           ID_NEW_LSYSTEM_3
+            END
+            POPUP "Midpoint Displacement"
+            BEGIN
+                MENUITEM "Line",                        ID_NEW_MDPTDISP_1D
+                MENUITEM "Plane",                       ID_NEW_MDPTDISP_2D
+                MENUITEM "Volume",                      ID_NEW_MDPTDISP_3D
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Fractal Generator...", ID_APP_ABOUT
+    END
+END
+
+IDR_FractalGeneratoTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "New"
+        BEGIN
+            POPUP "Complex"
+            BEGIN
+                MENUITEM "Mandelbrot",                  ID_NEW_MANDELBROT
+                MENUITEM "Julia",                       ID_NEW_JULIA
+                MENUITEM "Newton",                      ID_NEW_NEWTON
+                MENUITEM "Quaternion",                  ID_NEW_QUATERNION
+                MENUITEM "Real-Time Shader",            ID_NEW_QUATERNION
+            END
+            POPUP "MRCM"
+            BEGIN
+                MENUITEM "Sierpinsky Gasket",           ID_NEW_GASKET
+                MENUITEM "Twin Christmas Tree",         ID_NEW_TWINXMASTREE
+                MENUITEM "5 pt. Snowflake",             ID_NEW_5PTSNOWFLAKE
+                MENUITEM "Fern",                        ID_NEW_FERN
+                MENUITEM "Koch Curve",                  ID_NEW_KOCHCURVE
+                MENUITEM SEPARATOR
+                MENUITEM "Custom...\tCtrl+N",           ID_FILE_NEW
+            END
+            POPUP "L-System"
+            BEGIN
+                MENUITEM "1",                           ID_NEW_LSYSTEM_1
+                MENUITEM "2",                           ID_NEW_LSYSTEM_2
+                MENUITEM "3",                           ID_NEW_LSYSTEM_3
+            END
+            POPUP "Midpoint Displacement"
+            BEGIN
+                MENUITEM "Line",                        ID_NEW_MDPTDISP_1D
+                MENUITEM "Plane",                       ID_NEW_MDPTDISP_2D
+                MENUITEM "Volume",                      ID_NEW_MDPTDISP_3D
+            END
+        END
+        MENUITEM SEPARATOR
+        POPUP "Save"
+        BEGIN
+            MENUITEM "Save &Main As...\tCtrl+S",    ID_FILE_SAVEAS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "Fr&actal"
+    BEGIN
+        MENUITEM "&Render\tF5",                 ID_FRACTAL_BEGIN
+        MENUITEM "&Time...",                    ID_FRACTAL_TIME
+        MENUITEM SEPARATOR
+        MENUITEM "Auto-Generate Julia Set\tCtrl+A", ID_FRACTAL_AUTOJULIA
+        MENUITEM "Smooth Shading\tCtrl+M",      ID_FRACTAL_SMOOTHSHADING
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Julia Window",                ID_VIEW_JULIAWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Image Properties...",        ID_VIEW_IMAGEPROPERTIES
+        MENUITEM "&Fractal Parameters...",      ID_VIEW_FRACTALPARAMETERS
+        MENUITEM SEPARATOR
+        MENUITEM "Palette Editor...",           ID_VIEW_PALETTEEDITOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Fractal Generator...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVEAS,         VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_FRACTAL_AUTOJULIA,   VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_FRACTAL_BEGIN,       VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "R",            ID_VIEW_FRACTALPARAMETERS, VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_VIEW_IMAGEPROPERTIES, VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Fractal Generator"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Fractal Generator Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006 - 2008 Garrett Miller",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_FRACTAL_PARAMS DIALOGEX 0, 0, 168, 211
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_WINDOWEDGE
+CAPTION "Fractal Parameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Apply",IDAPPLY,111,190,50,14
+    PUSHBUTTON      "Close",IDCANCEL,7,190,50,14
+    GROUPBOX        "Viewport",IDC_STATIC,7,7,154,72
+    LTEXT           "X   Minimum                          Maximum",IDC_STATIC,15,19,119,8,WS_DISABLED
+    EDITTEXT        IDC_XMIN,15,28,66,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_XMAX,86,28,66,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Y   Minimum                          Maximum",IDC_STATIC,15,46,119,8,WS_DISABLED
+    EDITTEXT        IDC_YMIN,15,56,66,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_YMAX,86,56,66,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Bailout",IDC_STATIC,34,81,22,8
+    EDITTEXT        IDC_BAILOUT,15,92,66,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAXITERS,86,92,66,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Max Iterations",IDC_STATIC,96,81,48,8
+    GROUPBOX        "Shader Params",IDC_STATIC,7,108,154,78
+    EDITTEXT        IDC_SHADERPATH,10,119,137,14,ES_AUTOHSCROLL,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "...",IDC_BROWSE_SHADER,148,118,13,14
+END
+
+IDD_HELPDIALOG DIALOGEX 0, 0, 315, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fractal Generator Help"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,133,125,50,14
+    LTEXT           "How to draw the Mandelbrot fractal:",IDC_STATIC,10,11,118,8
+    LTEXT           " - Click the Begin button on the toolbar",IDC_STATIC,19,21,124,8
+    LTEXT           " - Go to Fractal -> Begin",IDC_STATIC,19,31,78,8
+    LTEXT           "You can click on any part of the image to zoom in 50% and recenter around that point.",IDC_STATIC,7,48,278,8
+    LTEXT           "If you hold down Ctrl while clicking, you can just recenter.",IDC_STATIC,7,79,186,8
+    LTEXT           "If you hold down Shift while clicking, you double the amount of zoom.",IDC_STATIC,7,91,222,8
+    LTEXT           "You can right-click on any part of the image to zoom out 50% and recenter around that point.",IDC_STATIC,7,60,301,8
+END
+
+IDD_JULIA_WINDOW DIALOGEX 300, 10, 187, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_OVERLAPPEDWINDOW | WS_EX_TOOLWINDOW
+CAPTION "Julia Fractal"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_IMAGE_PROPS DIALOGEX 0, 0, 141, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_PALETTEWINDOW
+CAPTION "Image Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,84,129,50,14,WS_DISABLED
+    PUSHBUTTON      "Close",IDCANCEL,7,129,50,14
+    LTEXT           "Width",IDC_STATIC,32,22,20,8
+    EDITTEXT        IDC_MAIN_WIDTH,24,32,37,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAIN_HEIGHT,77,32,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Height",IDC_STATIC,87,22,22,8
+    LTEXT           "x",IDC_STATIC,67,35,8,8
+    GROUPBOX        "Main Window (Mandelbrot)",IDC_STATIC,7,7,127,58
+    LTEXT           "Width",IDC_STATIC,33,81,20,8
+    EDITTEXT        IDC_SECONDARY_WIDTH,25,91,37,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SECONDARY_HEIGHT,77,91,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Height",IDC_STATIC,87,81,22,8
+    LTEXT           "x",IDC_STATIC,67,94,8,8
+    GROUPBOX        "Secondary Window (Julia)",IDC_STATIC,7,66,127,58
+END
+
+IDD_PALETTEDLG DIALOGEX 45, 300, 162, 235
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_WINDOWEDGE
+CAPTION "Palette Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,105,214,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,214,50,14
+    CONTROL         "",IDC_REDSLIDER,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,17,41,138,13
+    CONTROL         "",IDC_GREENSLIDER,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,17,73,138,13
+    CONTROL         "",IDC_BLUESLIDER,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,17,109,138,13
+    CONTROL         "",IDC_ENABLERED,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,0,43,16,8
+    CONTROL         "",IDC_ENABLEGREEN,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,0,75,16,8
+    CONTROL         "",IDC_ENABLEBLUE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,0,111,16,8
+    LTEXT           "y = a * sin(f * x) + b",IDC_STATIC,37,7,68,8
+    EDITTEXT        IDC_AMP_RED,19,55,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FREQ_RED,57,55,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BASE_RED,97,55,26,12,ES_AUTOHSCROLL
+    LTEXT           "A",IDC_STATIC,10,58,8,8
+    LTEXT           "F",IDC_STATIC,49,57,8,8
+    LTEXT           "B",IDC_STATIC,89,57,8,8
+    EDITTEXT        IDC_AMP_GREEN,19,87,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FREQ_GREEN,57,87,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BASE_GREEN,97,87,26,14,ES_AUTOHSCROLL
+    LTEXT           "A",IDC_STATIC,7,90,8,8
+    LTEXT           "F",IDC_STATIC,49,90,8,8
+    LTEXT           "B",IDC_STATIC,89,90,8,8
+    EDITTEXT        IDC_AMP_BLUE,19,122,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FREQ_BLUE,57,122,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BASE_BLUE,97,122,26,14,ES_AUTOHSCROLL
+    LTEXT           "A",IDC_STATIC,7,125,8,8
+    LTEXT           "F",IDC_STATIC,49,125,8,8
+    LTEXT           "B",IDC_STATIC,89,125,8,8
+    CONTROL         "Smooth Shading",IDC_SMOOTH_SHADING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,199,67,10
+    CONTROL         "",IDC_PHASESLIDER,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,17,24,138,10
+END
+
+IDD_OUTPUT_WINDOW DIALOGEX 0, 0, 200, 259
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_WINDOWEDGE
+CAPTION "Output/Console"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CONSOLE_INPUT,7,238,186,14,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    CONTROL         "",IDC_CONSOLE_OUTPUT,"RichEdit20A",ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_TABSTOP,7,7,186,227,WS_EX_DLGMODALFRAME
+END
+
+IDD_BLUEPRINT_DLG DIALOGEX 0, 0, 305, 202
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_OVERLAPPEDWINDOW | WS_EX_TOOLWINDOW
+CAPTION "MRCM Blueprint"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Garrett Miller"
+            VALUE "FileDescription", "Fractal Generator"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "Fractal Generator.exe"
+            VALUE "LegalCopyright", "© 2006 - 2008 Garrett Miller.  All rights reserved."
+            VALUE "OriginalFilename", "Fractal Generator.exe"
+            VALUE "ProductName", "FractalGenerator"
+            VALUE "ProductVersion", "0.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FRACTAL_PARAMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_HELPDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_JULIA_WINDOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_IMAGE_PROPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_PALETTEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_BLUEPRINT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Fractal Generator"
+    IDR_FractalGeneratoTYPE "\nFractal Generator\nFractal Generator"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Fractal Generator"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a custom MRCM"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FRACTAL_BEGIN        "Begin drawing the fractal"
+    ID_VIEW_FRACTALPARAMETERS "Change various fractal properties"
+    ID_HELP_HELP            "Help on the fractal generator"
+    ID_VIEW_IMAGEPROPERTIES "Set image properties"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_JULIAWINDOW     "Show the Julia set window"
+    ID_FRACTAL_AUTOJULIA    "Whether or not to automatically generate the Julia set as the mouse is moved over the fractal"
+    ID_SAVE_SAVESECONDARYAS "Saves the Julia fractal"
+    ID_VIEW_PALETTEEDITOR   "Change the color scheme of the fractals"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEW_GASKET           "Create a Sierpinsky Gasket"
+    ID_NEW_TWINXMASTREE     "Create a Twin Christmas Tree"
+    ID_NEW_5PTSNOWFLAKE     "Create a 5 point snowflake"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\FractalGenerator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

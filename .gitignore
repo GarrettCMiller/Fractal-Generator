@@ -1,0 +1,22 @@
+# Build and IDE output
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+.vs/
+*.suo
+*.user
+*.obj
+*.pdb
+*.pch
+*.ilk
+*.idb
+*.tlog
+*.log
+
+# Compiled programs, dependencies and signing material
+*.exe
+*.dll
+*.pfx
+*.p12
+*.snk
